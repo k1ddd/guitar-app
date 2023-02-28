@@ -8,8 +8,9 @@ spinnerPage.render();
 let CATALOG = [];
 
 //  https://api.npoint.io/33db4fb6462584079abd
+//server/catalog.json
 
-fetch("server/catalog.json")
+fetch("https://api.npoint.io/33db4fb6462584079abd")
   .then((result) => result.json())
   .then((body) => {
     CATALOG = body;
