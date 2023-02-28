@@ -9,7 +9,7 @@ let CATALOG = [];
 
 //  https://api.npoint.io/33db4fb6462584079abd
 
-fetch("https://api.npoint.io/c8d5949eea5709115d97")
+fetch("server/catalog.json")
   .then((result) => result.json())
   .then((body) => {
     CATALOG = body;
